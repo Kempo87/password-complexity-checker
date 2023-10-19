@@ -24,38 +24,50 @@ Ten program może być używany do oceny bezpieczeństwa haseł wprowadzanych pr
 
 ##### przypadki testowe:
 
-1. Silne hasło z małą i wielką literą, znakiem specjalnym, brakiem spacji i długością >= 8 znaków
-Dane wejściowe: "Haslo123!"
+1.Silne hasło z małą i wielką literą, znakiem specjalnym, brakiem spacji i długością >= 8 znaków
+
+Dane wejściowe: "Haslo123!" 
+
 oczekiwany wynik: Twoje hasło jest bezpieczne 
 
-2. Hasło bez małej litery
+2.Hasło bez małej litery
+
 Dane wejściowe: "HASLO123!"
+
 oczekiwany wynik: "Twoje hasło nie jest bezpieczne. Dostosuj się do poniższych reguł: Twoje hasło musi zawierać małą literę"
 
-3. Hasło bez wielkiej litery
+3.Hasło bez wielkiej litery
+
 Dane wejściowe: "haslo123!"
+
 oczekiwany wynik: "Twoje hasło nie jest bezpieczne. Dostosuj się do poniższych reguł: Twoje hasło musi zawierać wielką literę"
 
-4. Hasło bez znaku specjalnego
+4.Hasło bez znaku specjalnego
+
 Dane wejściowe: "Haslo123"
+
 Oczekiwany wynik: "Twoje hasło nie jest bezpieczne. Dostosuj się do poniższych reguł: Twoje hasło musi zawierać znak specjalny"
 
-5. Hasło ze spacją
+5.Hasło ze spacją
 
 Dane wejściowe: "Haslo 123!"
+
 Oczekiwany wynik: "Twoje hasło nie jest bezpieczne. Dostosuj się do poniższych reguł: Twoje hasło nie może zawierać spacji"
 
-6. Krótkie hasło (< 8 znaków) z małą i wielką literą oraz znakiem specjalnym
+6.Krótkie hasło (< 8 znaków) z małą i wielką literą oraz znakiem specjalnym
 
 Dane wejściowe: "Kr0t$"
+
 Oczekiwany wynik: "Twoje hasło nie jest bezpieczne. Dostosuj się do poniższych reguł: Twoje hasło musi zawierać minimum 8 znaków"
 
-7. Hasło złożone tylko z małych liter i spacji
+7.Hasło złożone tylko z małych liter i spacji
 
 Dane wejściowe: "to jest testowe haslo"
+
 Oczekiwany wynik: "Twoje hasło nie jest bezpieczne. Dostosuj się do poniższych reguł: Twoje hasło musi zawierać wielką literę, znak specjalny i nie może zawierać spacji"
 
-8. Puste hasło
+8.Puste hasło
 
 Dane wejściowe: ""
+
 Oczekiwany wynik: "Twoje hasło nie jest bezpieczne. Dostosuj się do poniższych reguł: Twoje hasło musi zawierać małą literę, wielką literę, znak specjalny i nie może zawierać spacji oraz musi zawierać minimum 8 znaków"
