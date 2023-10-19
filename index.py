@@ -10,7 +10,7 @@ for char in password:
         has_uppercase = True 
     elif char.isspace():
         has_space = True
-    else:
+    elif not char.isalnum():
         has_special_char = True
 long_enough = len(password) >= 8
 
